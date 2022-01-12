@@ -18,6 +18,7 @@ const send = async (channel = new TextChannel(), msg = new Message()) => {
 
 client.once('ready', () => {
   client.application.commands.set([{name: 'update', description: 'Update all channels'}, {name: 'delete', description: 'Delete all channels'}], '929571256947339306');
+  client.user.setStatus('with your feelings');
   console.log(`Logged in as ${client.user.tag}`);
 });
 
